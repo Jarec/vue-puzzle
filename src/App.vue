@@ -80,9 +80,9 @@ watch(columns, () => restart());
       <button @click="columns--" :disabled="columns <= 3">Size -</button>
       <button @click="columns++" :disabled="columns >= 8">Size +</button>
 
-      <h3 style="text-align: right; padding-right: 20px">
-        Score: {{ score }} Attempts: {{ Math.floor(attempts / 2) }} (Accuracy:
-        {{ scorePerc }}%)
+      <h3 style="text-align: right">
+        Score: {{ score }}/{{ cards.length / 2 }} Attempts:
+        {{ Math.floor(attempts / 2) }} (Accuracy: {{ scorePerc }}%)
       </h3>
     </div>
 
